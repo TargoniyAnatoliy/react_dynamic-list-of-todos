@@ -18,7 +18,7 @@ export const App: React.FC = () => {
   const [query, setQuery] = useState('');
   const [filterParameter, setFilterParameter] = useState<Filters>(Filters.All);
 
-  const selectedTodo: Todo = todos.find(todo => todo.id === selectedTodoId);
+  const selectedTodo = todos.find(todo => todo.id === selectedTodoId);
 
   const filteredTodos: Todo[] = todos
     .filter(todo => todo.title.toLowerCase().includes(query.toLowerCase()))
