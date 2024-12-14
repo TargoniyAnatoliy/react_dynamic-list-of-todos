@@ -3,7 +3,6 @@ import { Loader } from '../Loader';
 import { Todo } from '../../types/Todo';
 import { User } from '../../types/User';
 import { getUser } from '../../api';
-import { set } from 'cypress/types/lodash';
 
 type Props = {
   todo: Todo;
