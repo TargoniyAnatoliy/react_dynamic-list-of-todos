@@ -24,11 +24,11 @@ export const App: React.FC = () => {
     .filter(todo => todo.title.toLowerCase().includes(query.toLowerCase()))
     .filter(todo => {
       switch (filterParameter) {
-        case 'completed':
+        case Filters.Completed:
           return todo.completed;
-        case 'active':
+        case Filters.Active:
           return !todo.completed;
-        case 'all':
+        case Filters.All:
         default:
           return true;
       }
